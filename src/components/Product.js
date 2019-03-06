@@ -38,7 +38,7 @@ Product.propTypes = {
   name: PropTypes.string.isRequired ,
   producer: PropTypes.string ,
   hasWatermark: PropTypes.bool ,
-  color: PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired /*,
+  color: PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired ,
   weight: (props, propName) => {
     var exists = !!props[propName] ;
     var entry = props[propName] ;
@@ -55,7 +55,7 @@ Product.propTypes = {
     else {
       return new Error('Incorrect weight prop')
     }
-  } */
+  } 
 }
 
 export default Product ;
