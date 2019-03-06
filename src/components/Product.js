@@ -41,8 +41,8 @@ Product.propTypes = {
   color: PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired,
   weight: (props, propName) => {
     var exists = !!props[propName] ;
-    var entry = props[propName] ; 
-    var numeric = parseInt(entry) === entry ; 
-    
+    var entry = props[propName] ;
+    var numeric = parseInt(entry) === entry ;
+
   }
 }
