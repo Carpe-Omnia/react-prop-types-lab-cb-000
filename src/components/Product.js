@@ -43,6 +43,11 @@ Product.propTypes = {
     var exists = !!props[propName] ;
     var entry = props[propName] ;
     var numeric = parseInt(entry) === entry ;
-
+    var range ; 
+    if (numeric === true) {
+      if (entry >= 80 && entry <= 300) {
+        var range = true 
+      }
+    }
   }
 }
