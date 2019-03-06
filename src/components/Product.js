@@ -55,7 +55,7 @@ Product.propTypes = {
     else {
       return new Error('Incorrect weight prop')
     }
-  } 
+  }
 }
 
 export default Product ;
