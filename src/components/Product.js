@@ -34,6 +34,6 @@ Product.defaultProps = {
 };
 
 Product.propTypes = {
-  name: PropTypes.sring.isRequired, 
-  
+  name: PropTypes.sring.isRequired,
+
 }
