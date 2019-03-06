@@ -43,11 +43,17 @@ Product.propTypes = {
     var exists = !!props[propName] ;
     var entry = props[propName] ;
     var numeric = parseInt(entry) === entry ;
-    var range ;
-    if (numeric === true) {
+    var range = false ; 
+    if (numeric === true ) {
       if (entry >= 80 && entry <= 300) {
-        var range = true
+        var range = true 
       }
+    }
+    if (numeric === true && range === true) {
+        console.log("lookin good")
+    }
+    else {
+      return new Error('Incorrect weight prop')
     }
   }
 }
