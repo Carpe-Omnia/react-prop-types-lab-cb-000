@@ -31,4 +31,9 @@ export default class Product extends React.Component {
 
 Product.defaultProps = {
   hasWatermark: false
+};
+
+Product.propTypes = {
+  name: PropTypes.sring.isRequired, 
+  
 }
