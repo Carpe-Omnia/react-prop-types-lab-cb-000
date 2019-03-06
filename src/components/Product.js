@@ -27,4 +27,8 @@ export default class Product extends React.Component {
       </div>
     )
   }
+}
+
+Product.defaultProps = {
+  hasWatermark: false
 } 
