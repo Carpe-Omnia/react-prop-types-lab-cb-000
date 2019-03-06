@@ -35,5 +35,8 @@ Product.defaultProps = {
 
 Product.propTypes = {
   name: PropTypes.sring.isRequired,
-
+  producer: PropTypes.string, 
+  hasWatermark: PropTypes.bool,
+  color: PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired,
+  
 }
