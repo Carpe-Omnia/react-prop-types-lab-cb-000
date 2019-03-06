@@ -45,7 +45,7 @@ Product.propTypes = {
     var numeric = parseInt(entry) === entry ;
     var range = false ;
     if (numeric === true ) {
-      if (entry >= 80 && entry <= 300) {
+      if (entry > 80 && entry < 300) {
         var range = true
       }
     }
