@@ -49,7 +49,7 @@ Product.propTypes = {
          range = true
       }
     }
-    if (numeric === true && range === true && exists === true ) {
+    if (numeric === true && range === true ) {
         console.log("this seems fine")
     }
     else {
