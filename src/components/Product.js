@@ -59,7 +59,7 @@ Product.propTypes = {
         console.log("this seems fine")
     }
     else {
-      return new Error('Incorrect weight prop')
+      return new Error('Incorrect weight prop not in range')
     }
   }
 }
