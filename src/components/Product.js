@@ -41,6 +41,9 @@ Product.propTypes = {
   color: PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired ,
   weight: (props, propName) => {
     var exists = !!props[propName] ;
+    if (exists !== true) {
+      return new Error('weight does not exist')
+    }
     var entry = props[propName] ;
     var numeric = parseInt(entry) === entry ;
     var range = false ;
